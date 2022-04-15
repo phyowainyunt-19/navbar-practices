@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 :root {
@@ -20,24 +20,18 @@ body {
 }
 
 .navigation {
-  width: 25rem;
-  height: 4.375rem;
-  background: #fff;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.625rem;
+  width: 21.875rem;
+  height: 4.375rem;
 }
 
 .navigation ul {
   display: flex;
-  width: 21.875rem;
 }
 
 .navigation ul li {
   position: relative;
-  list-style: none;
+  list-style-type: none;
   width: 4.375rem;
   height: 4.375rem;
   z-index: 1;
@@ -48,92 +42,74 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 100%;
   text-align: center;
-  font-weight: 500;
+  flex-direction: column;
+  color: #fff;
+  text-decoration: none;
 }
 
 .navigation ul li a .icon {
   position: relative;
-  display: block;
   line-height: 4.688rem;
-  font-size: 1.5em;
-  text-align: center;
-  transition: 1s;
-  color: var(--clr);
+  /* transition: 0.5s; */
+  font-size: 2rem;
 }
 
 .navigation ul li.active a .icon {
-  transform: translateY(-32px);
+  font-size: 1.25rem;
+  transform: translateY(-6px);
 }
 
 .navigation ul li a .text {
   position: absolute;
-  color: var(--clr);
+  font-size: 0.75rem;
+  color: #fff;
+  bottom: 1.25rem;
   font-weight: 400;
-  font-size: 0.75em;
-  letter-spacing: 0.05em;
-  transition: 0.5s;
-  opacity: 0;
-  transform: translateY(20px);
+  transition: 0.25s;
+  text-transform: uppercase;
+  transform: scale(0);
 }
 
 .navigation ul li.active a .text {
-  opacity: 1;
-  transform: translateY(10px);
+  transform: scale(1);
 }
 
 .indicator {
   position: absolute;
-  top: -50%;
+  left: 0;
   width: 4.375rem;
   height: 4.375rem;
-  background: #29fd53;
-  border-radius: 50%;
-  border: 6px solid var(--clr);
-}
-
-.indicator::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -1.406rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  background: transparent;
-  border-top-right-radius: 1.25rem;
-  box-shadow: 0px -10px 0 0 var(--clr);
-}
-
-.indicator::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -1.406rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  background: transparent;
-  border-top-left-radius: 1.25rem;
-  box-shadow: -1px -10px 0 0 var(--clr);
+  border-radius: 0.625rem;
+  transition: 0.5s;
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator {
+  background: #f53b57;
+  box-shadow: 0 15px 25px #f53b5799;
   transform: translateX(calc(70px * 0));
 }
 
 .navigation ul li:nth-child(2).active ~ .indicator {
+  background: #5d62fb;
+  box-shadow: 0 15px 25px #5d62fb99;
   transform: translateX(calc(70px * 1));
 }
 
 .navigation ul li:nth-child(3).active ~ .indicator {
+  background: #05c46b;
+  box-shadow: 0 15px 25px #05c46b99;
   transform: translateX(calc(70px * 2));
 }
 
 .navigation ul li:nth-child(4).active ~ .indicator {
+  background: #0fbcf9;
+  box-shadow: 0 15px 25px #0fbcf999;
   transform: translateX(calc(70px * 3));
 }
 
 .navigation ul li:nth-child(5).active ~ .indicator {
+  background: #ffa801;
+  box-shadow: 0 15px 25px #ffa80199;
   transform: translateX(calc(70px * 4));
 }
