@@ -32,6 +32,7 @@
   border-radius: 50%;
   color: #fff;
   font-size: 1.25rem;
+  cursor: pointer; 
   background: linear-gradient(-135deg, #c850c0, #4158d8);
   transition: all 0.3s ease;
 }
