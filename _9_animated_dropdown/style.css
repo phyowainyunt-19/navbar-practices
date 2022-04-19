@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1b1b1b;
+  width: 25rem;
+  line-height: 2.5rem;
+  padding: 8px 25px;
+  border-radius: 5px;
+}
+
+nav label {
+  color: white;
+  font-size: 1.375rem;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+
+.button span {
+  float: right;
+  line-height: 2.188rem;
+  transition: 0.5s;
+}
+
+.button span.rotate {
+  transform: rotate(-180deg);
+}
+
+nav ul {
+  position: absolute;
+  background: #1b1b1b;
+  list-style: none;
+  top: 4.375rem;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+
+[id^="btn"]:checked + ul {
+  display: block;
+}
+
+nav .menu::before {
+  position: absolute;
+  content: "";
+  height: 1.25rem;
+  width: 1.25rem;
+  background: #1b1b1b;
+  right: 1.25rem;
+  top: -0.625rem;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+nav ul li {
+  line-height: 2.5rem;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav ul li label {
+  font-size: 1.125rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: block;
+}
+
+nav ul li a:hover,
+nav ul li label:hover {
+  color: cyan;
+}
+
+nav ul ul {
+  position: static;
+}
+
+nav ul ul li {
+  line-height: 1.875rem;
+  padding-left: 1.875rem;
+  border-bottom: none;
+}
+
+nav ul ul li a {
+  color: #e6e6e6;
+  font-size: 1.063rem;
+}
+
+nav ul li span {
+  font-size: 1.25rem;
+  float: right;
+  margin-top: 0.625rem;
+  padding: 0 0.625rem;
+  transition: 0.5s;
+}
+
+nav ul li span.rotate {
+  transform: rotate(-180deg);
+}
+
+input {
+  display: none;
+}
