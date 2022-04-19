@@ -6,7 +6,7 @@ To practice different css navbar styles.
 * [Technologies](#technologies)
 
 ## General info
-CSS navbar styles that I've practiced before.
+CSS navigation and menubar styles that I've practiced before.
 	
 ## Technologies
 * CSS
