@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #18191a;
+  /* overflow: hidden; */
+}
+
+nav {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav .button {
+  width: 25rem;
+  background: #242526;
+  color: #b0b3b8;
+  line-height: 3rem;
+  padding: 0 1.25rem;
+  border-radius: 0.6rem;
+  font-size: 1.25rem;
+}
+
+nav .button span {
+  float: right;
+  line-height: 3.125rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+nav .wrapper {
+  position: absolute;
+  display: flex;
+  width: 75rem;
+  top: 4rem;
+  background: #242526;
+  border-radius: 1rem;
+}
+
+nav .wrapper ul {
+  list-style: none;
+  width: 25rem;
+  padding: 0.625rem;
+}
+
+nav .wrapper ul li {
+  line-height: 3.438rem;
+  border-radius: 0.6rem;
+}
+
+nav .wrapper ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #b0b3b8;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 0.625rem;
+  align-items: center;
+}
+
+nav .wrapper ul li:hover {
+  background: #3a3b3c;
+}
+
+nav .wrapper ul li a .icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 0.813rem;
+  background: #ffffff1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+nav .wrapper ul li a i {
+  position: absolute;
+  right: 0.625rem;
+  font-size: 1.563rem;
+  pointer-events: none;
+}
+
+.wrapper .setting-drop .arrow {
+  padding-left: 0.625rem;
+  font-size: 1.25rem;
+  color: #b0b3b8;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper .setting-drop .arrow span {
+  margin-right: 0.938rem;
+}
