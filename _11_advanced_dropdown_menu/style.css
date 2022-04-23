@@ -37,10 +37,22 @@ nav .button span {
 nav .wrapper {
   position: absolute;
   display: flex;
-  width: 75rem;
+  width: 25rem;
+  overflow: hidden;
   top: 4rem;
   background: #242526;
   border-radius: 1rem;
+  display: none;
+}
+
+nav .wrapper.show {
+  display: block;
+  display: flex;
+}
+
+nav .wrapper .setting_drop,
+nav .wrapper .help_drop {
+  display: none;
 }
 
 nav .wrapper ul {
