@@ -1,139 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Dropdown</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div for="btn" class="button">
-            Drop down
-            <span class="icon fas fa-caret-down"></span>
-        </div>
-        <div class="wrapper">
-            <ul class="menu_bar">
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-home"></span></div>
-                        Home
-                    </a>
-                </li>
-                <li class="setting_item">
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-cog"></span></div>
-                        Setting & privacy <i class="fas fa-angle-right"></i>
-                    </a>
-                </li>
-                <li class="help_item">
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-question-circle"></span>
-                        </div>
-                        Help & support <i class="fas fa-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-user"></span></div>
-                        About us
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-comment-alt"></span></div>
-                        Feedback
-                    </a>
-                </li>
-            </ul>
-            <!-- Settings & privacy menu items -->
-            <ul class="setting_drop">
-                <li class="arrow"><span class="fas fa-arrow-left"></span>Setting & privacy</li>
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-user"></span></div>
-                        Personal info
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-lock"></span></div>
-                        Password
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-address-book"></span>
-                        </div>
-                        Activity log
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-globe-asia"></span></div>
-                        Languages
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-sign-out-alt"></span></div>
-                        Log out
-                    </a>
-                </li>
-            </ul>
-            <!-- Help & support menu items -->
-            <ul class="help_drop">
-                <li class="arrow"><span class="fas fa-arrow-left"></span>Help & support</li>
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-question-circle"></span></div>
-                        Help Centre
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-envelope"></span></div>
-                        Support inbox
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="icon">
-                            <span class="fas fa-comment-alt"></span>
-                        </div>
-                        Send feedback
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="icon"><span class="fas fa-exclamation-circle"></span></div>
-                        Report problem
-                    </a>
-                </li>
-            </ul>
-        </div>
+      <div for="btn" class="button">
+        Drop down
+        <span class="icon fas fa-caret-down"></span>
+      </div>
+      <div class="wrapper">
+        <ul class="menu_bar">
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-home"></span></div>
+              Home
+            </a>
+          </li>
+          <li class="setting_item">
+            <a href="#">
+              <div class="icon"><span class="fas fa-cog"></span></div>
+              Setting & privacy <i class="fas fa-angle-right"></i>
+            </a>
+          </li>
+          <li class="help_item">
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-question-circle"></span>
+              </div>
+              Help & support <i class="fas fa-angle-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-user"></span></div>
+              About us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-comment-alt"></span></div>
+              Feedback
+            </a>
+          </li>
+        </ul>
+        <!-- Settings & privacy menu items -->
+        <ul class="setting_drop">
+          <li class="arrow back_setting_btn">
+            <span class="fas fa-arrow-left"></span>Setting & privacy
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-user"></span></div>
+              Personal info
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-lock"></span></div>
+              Password
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-address-book"></span>
+              </div>
+              Activity log
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-globe-asia"></span></div>
+              Languages
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-sign-out-alt"></span></div>
+              Log out
+            </a>
+          </li>
+        </ul>
+        <!-- Help & support menu items -->
+        <ul class="help_drop">
+          <li class="arrow back_help_btn">
+            <span class="fas fa-arrow-left"></span>Help & support
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-question-circle"></span>
+              </div>
+              Help Centre
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon"><span class="fas fa-envelope"></span></div>
+              Support inbox
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-comment-alt"></span>
+              </div>
+              Send feedback
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <span class="fas fa-exclamation-circle"></span>
+              </div>
+              Report problem
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <script>
-        const drop_btn = document.querySelector(".button");
-        const menu_wrapper = document.querySelector(".wrapper");
-        const menu_bar = document.querySelector(".menu_bar");
-        const setting_drop = document.querySelector(".setting_drop");
-        const help_drop = document.querySelector(".help_drop");
-        drop_btn.onclick = (() => {
-            menu_wrapper.classList.toggle("show");
-        })
+      const drop_btn = document.querySelector(".button");
+      const menu_wrapper = document.querySelector(".wrapper");
+      const menu_bar = document.querySelector(".menu_bar");
+      const setting_drop = document.querySelector(".setting_drop");
+      const help_drop = document.querySelector(".help_drop");
+      const setting_item = document.querySelector(".setting_item");
+      const help_item = document.querySelector(".help_item");
+      const back_setting_btn = document.querySelector(".back_setting_btn");
+      const back_help_btn = document.querySelector(".back_help_btn");
+      drop_btn.onclick = () => {
+        menu_wrapper.classList.toggle("show");
+      };
+      setting_item.onclick = () => {
+        menu_bar.style.marginLeft = "-25rem";
+        setTimeout(() => {
+          setting_drop.style.display = "block";
+        }, 100);
+      };
+      help_item.onclick = () => {
+        menu_bar.style.marginLeft = "-25rem";
+        setTimeout(() => {
+          help_drop.style.display = "block";
+        }, 100);
+      };
+      back_setting_btn.onclick = () => {
+        menu_bar.style.marginLeft = "0rem";
+        setting_drop.style.display = "none";
+      };
+      back_help_btn.onclick = () => {
+        menu_bar.style.marginLeft = "0rem";
+        help_drop.style.display = "none";
+      };
     </script>
-</body>
-
+  </body>
 </html>
