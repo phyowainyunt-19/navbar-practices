@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .wrapper {
@@ -20,20 +21,85 @@ body {
 
 .wrapper .parent-tab,
 .wrapper .child-tab {
+  margin-bottom: 0.6rem;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .wrapper .parent-tab label,
 .wrapper .child-tab label {
-  display: flex;
+  position: relative;
+  z-index: 1;
   background: #007bff;
+  display: flex;
   padding: 0.625rem 1.25rem;
+  font-size: 1.2rem;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+  border-radius: 0.2rem;
 }
 
 .wrapper label span {
-  color: #fff;
   font-size: 1.2rem;
+  color: #fff;
   font-weight: 500;
-  box-shadow: 0 -1px 1px #0056b3;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+
+.child-tab label span {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+
+.wrapper label .icon {
+  position: relative;
+  width: 1.875rem;
+  height: 1.875rem;
+  color: #007bff;
+  background: #fff;
+  font-size: 1.2rem;
+  display: block;
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+
+.parent-tab input:checked ~ label .icon i::before,
+.child-tab input:checked ~ label .icon i::before {
+  content: "\f068";
+}
+
+.wrapper label .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.parent-tab input:checked ~ .content,
+.child-tab input:checked ~ .sub-content {
+  max-height: 100vh;
+}
+
+.tab-3 input:checked ~ .content {
+  padding: 1rem 1.25rem;
+}
+
+.wrapper .parent-tab .content p,
+.wrapper .child-tab .sub-content p {
+  font-size: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.wrapper input {
+  display: none;
 }
